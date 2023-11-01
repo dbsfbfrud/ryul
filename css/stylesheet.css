@@ -1,0 +1,419 @@
+@charset "uft-8";
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 700;
+	src: url('./SUIT-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 500;
+	src: url('./SUIT-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 300;
+	src: url('./SUIT-Light.woff2') format('woff2');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.section{
+    padding: 100px 0;
+}
+
+
+h1{font-size: 1.8rem;}
+h3{font-size: 1rem;}
+a{font-size: 1rem;
+font-weight: 700;}
+p{
+    font-size: 0.8rem; 
+    font-weight: 700;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+input{
+    border: none;
+    height: 25px;
+    border-radius: 2px;
+    font-family: 'SUIT';
+}
+
+label, button{
+    font-family: 'SUIT';
+    font-size: 0.8rem; 
+    font-weight: 700;
+}
+/* header */
+
+header{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding: 55px 0;
+}
+
+
+header .container{
+    line-height: 50px;
+    position: fixed;
+    left: 18%;
+    z-index: 999;
+}
+
+
+header nav{ 
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 30px;
+    z-index: 99;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+header nav ul li{
+    width: 100%;
+}
+
+header .container nav ul li:hover{
+     border-radius: 5px; 
+     background-color: #2267f2;  
+}
+
+header nav ul li:hover a{
+    color: rgb(255, 255, 255);
+}
+  
+/* main */
+.profile{
+    background-color: #ebebeb
+}
+.profile >.container{
+ width: 1000px;
+}
+.container a img{
+    width: 200px;
+}
+
+.profile-title{
+   text-align: center;
+   margin-bottom: 30px;
+}
+.container .profile{
+    display: inline-block;
+    transform: rotate(-90deg);
+    color: #2267f2;
+    position: absolute;
+    bottom: 15%;
+    left: -80px;
+} 
+
+.profile-title >h1,h3{
+    display: inline;
+	font-family: 'SUIT';
+    font-weight: 700;
+}
+
+.profile .container .content{
+    width: 100%;
+    background-color:#F0F0F0 ;
+    border-radius: 0 0 20px 20px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 1px rgb(200, 200, 200);
+  }
+
+.profile .container .content .label{
+    width: 100%;
+    display: flex;
+    gap: 20%;
+    background-color: #2267f2;
+    border-radius: 10px 10px 0 0 ;
+    line-height: 35px;
+}
+
+.profile .container .content .label >h3{
+    color: #F0F0F0;
+    width: 50%;
+    text-align: center;
+}
+.profile .profile-box{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+.profile .profile-box .education{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    text-align: center;
+}
+.profile .profile-box .pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.profile .profile-box .pic img{
+    width: 100%; 
+    object-fit: cover;
+}
+.profile .profile-box .skill img{
+    width: 100%;
+    object-fit: cover;
+}
+.profile .profile-box .skill_img2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.profile .profile-box .skill{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.profile .profile-box .skill div{
+   
+
+}
+
+.profile .profile-box.skill>h3{
+    display: block;
+}
+
+.work{
+    background-color:#f8f8f8;
+}
+
+
+.container .work{
+    color: #2267f2;
+    padding-bottom: 50px;
+}
+
+.work .sw-work{
+    width: 100%;
+    height: 410px;
+    margin: 0 auto;
+}
+
+.work .swiper-slide {
+    height: 100%
+}
+
+.work .swiper-slide .img-wrap{
+    width: 100%;
+    height: 90%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.img-wrap img{
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.work .swiper-slide .img-wrap:hover img{
+    filter: brightness(50%);
+}
+
+
+.work .swiper-slide img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+
+/* pagnation */
+
+.btn-next> i{
+    position: absolute;
+    left: 102.5%;
+    top: 55%;
+}
+
+.btn-prev> i{
+    position: absolute;
+    left: -5%;
+    top: 55%;
+}
+
+/* 모달창 */
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.modal.show{
+    display: block;
+}
+
+.modal .dim{
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+.modal .dim::after{
+    content: "X";
+    color: #FFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+/* 모달 */
+.modal .item_box{
+    position: relative;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1008px;
+    height: 567px;
+}
+
+.modal .item_box iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* contact section  */
+
+
+.contact{
+    background-color: #bfbfbf;
+}
+
+.contact .contact-title{
+    color: #2267f2;
+    padding-bottom: 50px;
+}
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 1px rgb(200, 200, 200);
+    gap: 5%;
+}
+
+.form{
+   height: 90%;
+   border-radius: 20px;
+   background-color: #e1e1e1;
+   flex-basis: 40%;
+}
+
+.form div{
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.form div label, input{
+    display: block;
+    margin: 2px;
+}
+
+.contact-info{
+    flex-basis: 30%;
+}
+
+.contact-info>div{
+    padding: 20px 0;
+}
+
+
+.contact-info .phone, .email{
+    display: flex;
+
+}
+
+.icon-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-wrap>img{
+    width: 30px;
+}
+.icon-wrap>a> img{
+    width: 30px;
+}
+
+/* footer */
+.footer {
+    background-color: #bfbfbf;
+}
+
+.footer .container p{
+    text-align: center;
+}
