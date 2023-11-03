@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_site</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- swiper slide cdn -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- aos cdn -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- css -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet_responsive.css">
+    <!-- jquerycdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- aos cdn -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery -->
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <a href="#"><img src="img/로고.png" alt=""></a>
+           <div class="nav-wrap">
+                <nav>
+                    <ul>
+                        <li><a href="#">PROFILE</a></li>
+                        <li><a href="#">WORK</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+           </div>
+     </div>
+    </header>
+    <!-- main -->
+    <section class="profile section">
+        <div class="container">
+            <h1 class="profile">PROFILE</h1>
+            <div class="profile-title">
+                <h3>매 순간 성장을 거듭하고 싶은 열정 넘치는</h3>
+                <h1>영상 제작자 '윤률경'</h1>
+                <h3>입니다</h3>
+            </div>
+            <div class="content">
+                <div class="label">
+                    <h3>EDUCATION</h3>
+                    <h3>SKILL</h3>
+                </div>
+                <div class="profile-box">
+                    <div class="education">
+                            <p>디지털 영상 제작</p>
+                            <p>(그린컴퓨터아트학원/23.06~23.11)</p> <br><br>
+                            <p>영상 촬영 및 제작</p>
+                            <p>(그린컴퓨터아트학원/23.09~23.11)</p> <br><br>
+                            <p>디지털 그래픽 제작</p>
+                            <p>(그린컴퓨터아트학원/23.03~23.06)</p> 
+                    </div>
+                    <div class="pic">
+                            <img src="img/그림1.jpg" alt="증명">
+                    </div>
+                    <div class="skill">
+                        <div class="skill_img" data-aos="flip-up" data-aos-duration="500" data-eos-delay="500">
+                            <img src="img/스킬1.png" alt="">
+                        </div>
+                        <div class="skill_img2" data-aos="zoom-in" data-aos-duration="2000"         data-eos-delay="1000">
+                            <img src="img/스킬2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+   <section class="work section">
+    <div class="container">
+        <h1 class="work">WORK</h1>
+        <div class="swiper sw-work">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                     <div class="img-wrap">
+                    <img src="img/타이포.PNG" alt="" data-video="FoqWQLLSI0g" >
+                    </div>
+                </div> 
+                <div class="swiper-slide">
+                    <div class="img-wrap">
+                        <img src="img/무빙포스터.PNG" alt="" data-video="fhjIQV1PK2A">
+                    </div>
+                </div> 
+                <div class="swiper-slide">
+                    <div class="img-wrap">
+                        <img src="img/뮤빙포스터.PNG" alt="" data-video="houG0Whb9KM">
+                    </div>
+                </div> 
+                <div class="swiper-slide">
+                    <div class="img-wrap">
+                        <img src="img/자동차.PNG" alt="" data-video="aDrkddT1YYQ">
+                    </div>
+                </div> 
+                <div class="swiper-slide">
+                    <div class="img-wrap">
+                        <img src="img/인터뷰.PNG" alt="" data-video="1Z-ypCAExfo">
+                    </div>
+                </div> 
+              </div>
+            </div>
+            <!-- pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="btn-next">
+              <i class="fa-solid fa-square-caret-right fa-2xl" style="color: #f26222;"></i>
+            <div class="btn-prev">
+              <i class="fa-solid fa-square-caret-right fa-rotate-180 fa-2xl" style="color: #f26222;"></i>
+            </div>
+        </div>
+   </section>
+       <!-- 모달창 -->
+       <div class="modal">
+        <span class="dim"></span>
+    </div>
+   <section class="contact section">
+    <div class="container">
+        <h1 class="contact-title">CONTACT</h1>
+      <div class="content-wrap">
+            <form
+              action="https://formspree.io/f/maygkyjp"
+              method="POST"> 
+                <div>
+                    <label for="username">성함(name)</label>
+                    <input type="text" name="name" id="userid" required>
+                </div>
+                <div>
+                    <label for="email">이메일(e-mail)</label>
+                    <input type="text" name="email" id="userid" required>
+                </div>
+                <div>
+                    <label for="message">문의사항(message)</label>
+                    <input type="text" name="message" id="message" required>
+                </div>
+                <button>전송</button>
+            </form>
+            <div class="contact-info">
+                <div class="phone">
+                    <p>연락처(phone)</p>
+                    <p>010 4576 9490</p>
+                </div>
+                <div class="email">
+                    <p>이메일(email)</p>
+                    <p>dbsfbfrud@naver.com</p>
+                </div>
+                <div class="social">
+                    <p>소셜미디어</p>
+                   <div class="icon-wrap">
+                        <img src="img/kakao.jpg" alt="">
+                        <!-- <p>ID: dbsfbfrud</p><br> -->
+                        <a href="https://youtube.com/@_ryulll?si=66nAfHykp9cUnr-8"><img src="img/youtube_1384060.png" alt=""></a>
+                        <a href="https://instagram.com/_ryulll?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><img src="img/instagram_2111463.png" alt=""></a>
+                   </div>
+                </div>
+            </div>
+      </div>
+    </div>
+   </section>
+<!-- footer -->
+<section class="footer section">
+    <div class="container">
+        <p>Copyright for Yoon Ryul Kyeong all rights reserved.</p>
+    </div>
+</section>
+</body>
+   <!-- AOS -->
+   <script>
+    AOS.init();
+  </script>     
+  <!-- JS -->
+<script src="js/script.js"></script>
+</html>

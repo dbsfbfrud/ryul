@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../23.08.09"
+		},
+		{
+			"path": "../../23.08.10"
+		},
+		{
+			"path": "../../23.08.25"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "포폴사이트진행중"
+	}
+}
