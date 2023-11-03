@@ -39,7 +39,7 @@ body{
 
 
 .section{
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 
@@ -66,12 +66,14 @@ input{
     height: 25px;
     border-radius: 2px;
     font-family: 'SUIT';
+    width: 90%;
 }
 
 label, button{
     font-family: 'SUIT';
     font-size: 0.8rem; 
     font-weight: 700;
+    border: none;
 }
 /* header */
 
@@ -159,17 +161,19 @@ header nav ul li:hover a{
 .profile .container .content .label{
     width: 100%;
     display: flex;
-    gap: 20%;
     background-color: #2267f2;
     border-radius: 10px 10px 0 0 ;
-    line-height: 35px;
+    line-height: 50px;
+    gap: 30%;
 }
 
 .profile .container .content .label >h3{
     color: #F0F0F0;
-    width: 50%;
     text-align: center;
+    flex-basis: 35%;
 }
+
+
 .profile .profile-box{
     display: flex;
     justify-content: center;
@@ -366,21 +370,43 @@ header nav ul li:hover a{
     gap: 5%;
 }
 
-.form{
+form{
    height: 90%;
    border-radius: 20px;
    background-color: #e1e1e1;
    flex-basis: 40%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
 }
 
-.form div{
+form div{
+    width: 90%;
     padding: 5px;
     margin: 0 auto;
 }
 
-.form div label, input{
+
+form div label, input{
     display: block;
     margin: 2px;
+}
+
+form button{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 60px;
+    line-height: 25px;
+    border-radius: 3px;
+}
+
+
+form button:hover{
+    background-color: #2267f2;
+    color: #e1e1e1;
 }
 
 .contact-info{
@@ -395,6 +421,9 @@ header nav ul li:hover a{
 .contact-info .phone, .email{
     display: flex;
 
+}
+.contact-info .social>div{
+    padding: 5% 0;
 }
 
 .icon-wrap{

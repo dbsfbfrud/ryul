@@ -21,7 +21,7 @@
     <!-- aos cdn -->
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- jquery -->
-    <script src="js/script.js"></script>
+
 </head>
 <body>
     <!-- header -->
@@ -67,12 +67,14 @@
                     </div>
                     <div class="skill">
                         <div class="skill_img" data-aos="flip-up" data-aos-duration="500" data-eos-delay="500">
-                            <img src="img/스킬1.png" alt=""></div>
-                        <div class="skill_img2" data-aos="zoom-in" data-aos-duration="2000" data-eos-delay="1000">
-                            <img src="img/스킬2.png" alt=""></div>
+                            <img src="img/스킬1.png" alt="">
+                        </div>
+                        <div class="skill_img2" data-aos="zoom-in" data-aos-duration="2000"         data-eos-delay="1000">
+                            <img src="img/스킬2.png" alt="">
+                        </div>
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
    </section>
    <section class="work section">
@@ -81,28 +83,28 @@
         <div class="swiper sw-work">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="img-wrap">
-                        <img src="img/타이포.PNG" alt="">
+                     <div class="img-wrap">
+                    <img src="img/타이포.PNG" alt="" data-video="FoqWQLLSI0g" >
                     </div>
                 </div> 
                 <div class="swiper-slide">
                     <div class="img-wrap">
-                        <img src="img/무빙포스터.PNG" alt="">
+                        <img src="img/무빙포스터.PNG" alt="" data-video="fhjIQV1PK2A">
                     </div>
                 </div> 
                 <div class="swiper-slide">
                     <div class="img-wrap">
-                        <img src="img/뮤빙포스터.PNG" alt="">
+                        <img src="img/뮤빙포스터.PNG" alt="" data-video="houG0Whb9KM">
                     </div>
                 </div> 
                 <div class="swiper-slide">
                     <div class="img-wrap">
-                        <img src="img/자동차.PNG" alt="">
+                        <img src="img/자동차.PNG" alt="" data-video="aDrkddT1YYQ">
                     </div>
                 </div> 
                 <div class="swiper-slide">
                     <div class="img-wrap">
-                        <img src="img/인터뷰.PNG" alt="">
+                        <img src="img/인터뷰.PNG" alt="" data-video="1Z-ypCAExfo">
                     </div>
                 </div> 
               </div>
@@ -124,21 +126,23 @@
     <div class="container">
         <h1 class="contact-title">CONTACT</h1>
       <div class="content-wrap">
-            <div class="form">
+            <form
+              action="https://formspree.io/f/maygkyjp"
+              method="POST"> 
                 <div>
                     <label for="username">성함(name)</label>
-                    <input type="text" id="userid" required>
+                    <input type="text" name="name" id="userid" required>
                 </div>
                 <div>
                     <label for="email">이메일(e-mail)</label>
-                    <input type="text" id="userid" required>
+                    <input type="text" name="email" id="userid" required>
                 </div>
                 <div>
                     <label for="message">문의사항(message)</label>
-                    <input type="text" id="message" required>
+                    <input type="text" name="message" id="message" required>
                 </div>
                 <button>전송</button>
-            </div>
+            </form>
             <div class="contact-info">
                 <div class="phone">
                     <p>연락처(phone)</p>
